@@ -1,59 +1,62 @@
-# Assignment 6: Types of HTML Lists
+# Assignment 7: About Me Page
 
 ## 1. Experiment Title
-Types of HTML Lists
+About Me Page
 
 ## 2. Aim
-Create an unordered shopping list, an ordered canteen menu with a nested list, and a description list of frequently asked questions.
+Build a short About Me page using semantic HTML elements, an about section, navigation links, and a contact link.
 
 ## 3. Software / Tools Required
-HTML, text editor or IDE, web browser
+HTML, text editor or IDE, web browser, email address
 
 ## 4. Theory
-HTML supports unordered lists (`ul`), ordered lists (`ol`), and description lists (`dl`). List items use `li`; description terms and descriptions use `dt` and `dd`.
+Semantic HTML elements such as `header`, `nav`, `main`, `section`, and `footer` describe the meaning and structure of page content. Fragment links use an element id; email links use the `mailto:` scheme.
 
 ## 5. Algorithm / Procedure
-1. Create `shopping-list.html` with the heading Shopping List and three unordered items: Notebook, Pen, and Bag.
-2. Create `canteen-menu.html` with an ordered list containing Samosa and Sandwich; nest an ordered list with Cheese and Vegetable under Sandwich.
-3. Create `faq.html` with two questions in a description list: borrowing books and Sunday library opening; add an answer for each.
+1. Create `about-me.html` with a header containing an H1 name and navigation links to `#about` and `#contact`.
+2. Add an empty main element and footer initially.
+3. Inside main, add a section with id `about`, an H2 heading, and a paragraph about yourself.
+4. Inside the footer, add a contact paragraph with a link to your email address using `mailto:`.
+5. Test the navigation and contact links.
 
 ## 6. Program / Queries / Commands
 ```html
-<!-- shopping-list.html -->
-<h1>Shopping List</h1>
-<ul>
-  <li>Notebook</li>
-  <li>Pen</li>
-  <li>Bag</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!-- canteen-menu.html -->
-<h1>Canteen Menu</h1>
-<ol>
-  <li>Samosa</li>
-  <li>Sandwich
-    <ol>
-      <li>Cheese</li>
-      <li>Vegetable</li>
-    </ol>
-  </li>
-</ol>
+  <main>
+    <section id="about">
+      <h2>About me</h2>
+      <p>Write a short paragraph about yourself.</p>
+    </section>
+  </main>
 
-<!-- faq.html -->
-<h1>FAQ</h1>
-<dl>
-  <dt>How many books can I borrow?</dt>
-  <dd>You can borrow up to three books.</dd>
-  <dt>Is the library open on Sunday?</dt>
-  <dd>No, the library is closed on Sunday.</dd>
-</dl>
+  <footer id="contact">
+    <p>Contact:
+      <a href="mailto:you@example.com">you@example.com</a>
+    </p>
+  </footer>
+</body>
+</html>
 ```
 
 ## 7. Input
-The input is the list of shopping items, menu items, and FAQ questions and answers.
+The input is the student's name, short biography, and email address.
 
 ## 8. Output
-The browser should show three bullet points, a numbered menu with a nested numbered list, and two questions each followed by an answer. Include browser screenshots.
+The page should show the name and two navigation links. Selecting About should jump to the about section, and Contact should jump to the footer. The email link should open the default email application. Include a browser screenshot.
 
 > **Output evidence:** Add the required terminal or browser screenshots in this assignment folder before submission.
 
@@ -61,7 +64,6 @@ The browser should show three bullet points, a numbered menu with a nested numbe
 The experiment was completed according to the stated aim. Verify the output in the browser or terminal and attach the actual screenshots produced on your computer.
 
 ## 10. Viva-Voce Questions
-1. What is the difference between `ul` and `ol`?
-2. Which tags are used in a description list?
-3. How do you create a nested list?
-
+1. What is semantic HTML?
+2. What does `href="#about"` do?
+3. What is the purpose of `mailto:`?
