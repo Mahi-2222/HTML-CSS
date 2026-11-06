@@ -25,3 +25,19 @@ h1 {
 p {
     color: var(--main-color);
 }
+:root {
+    --primary-color: #1d3557;
+    --accent-color: #e63946;
+    --heading-size: 2rem;
+    --spacing: 16px;
+}
+
+body {
+    background-color: var(--primary-color);
+    padding: var(--spacing);
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: var(--heading-size);
+}
