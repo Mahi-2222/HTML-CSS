@@ -1,1 +1,38 @@
+mkdir html-lab
+cd html-lab
+git init
+git config --local user.name "Your Name"
+git config --local user.email "you@example.com"
 
+Check your configuration:
+git config --local user.name
+git config --local user.email
+
+ Create index.html:
+
+File: index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+</head>
+<body>
+
+    <h1>Welcome to My Website</h1>
+
+    <h2>Next Meeting</h2>
+
+</body>
+</html>
+
+
+Run these commands:
+git status
+git add index.html
+git commit -m "Add home page"
+
+
+After adding the second heading, save the file and run:
+git add index.html
+git commit -m "Add next meeting heading"
+git log --oneline
